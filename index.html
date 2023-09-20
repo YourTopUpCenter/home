@@ -1,624 +1,653 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-     <head>
-          <meta charset="utf-8">
-          <title>Your TopUp Center | Home</title>
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Update V7 - Your TopUp Center</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@200;400;600;700&family=Kanit:wght@100;200;400;600;800&family=REM:wght@400;600&display=swap" rel="stylesheet">
+		
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+		
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
-<link rel="stylesheet" href="style.css">
-          <style>
-        
-#grad1 {
-  height: 100px;
-  background-image: linear-gradient(red, green);
-} 
+    <style>
+    /* Add all your styles here */
 
-body {
-  font-family: 'Lexend', sans-serif;
-}
-
-hr {
-        border-top: 5px solid #3EA99F;
-      } 
-
-.center 
-{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-
-
-
-
-
-*
-{
-  padding: 0;
+*{
   margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans Condensed', sans-serif;
   box-sizing: border-box;
-  
 }
 
-.menu-bar
-{
-  background: rgb(0,100,0);
+.header{
+ min-height: 100vh;
+ width: 100%;
+ background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://i.postimg.cc/NG35tdRH/BG-2.jpg);
+ background-position: center;
+ background-size: cover;
+ position : relative;
+}
+
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-item: center;
+}
+
+nav img{
+  width: 150px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #00ff03;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   text-align: center;
 }
 
-.menu-bar ul
-{
-  display: inline-flex;
-  list-style: none;
+.text-box h1{
+  font-size: 62px;
+  font-family: 'REM', sans-serif;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
   color: #fff;
+  font-family: 'Kanit', sans-serif;
 }
 
-.menu-bar ul li
-{
-  width: 60px;
-  margin: 15px;
-  padding: 10px;
-}
 
-.menu-bar ul li a
-{
+.hero-btn{
+  display: inline-block;
   text-decoration: none;
   color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
 }
 
-.active, .menu-bar ul li:hover
-{
-  background: #2bab09;
-  border-radius: 3px;
+.hero-btn:hover{
+  border: 1px solid #58f43d;
+  background: #58f43d;
+  color: black;
+  transition: 1s;
 }
 
-.menu-bar .fa
-{
-  margin-right: 3px;
+.mein{
+  color: red;
+  text-align: center;
 }
 
 
 
-.selection
-{
-  background-color: #000000;
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  width: 40%
-  margin: 10rem auto 0 auto; 
+.mo-menu{
+  flex: 1;
+  text-align: right;
+  display: none;
 }
 
-.selection img
-{
-  height: 120px;
+.mo-menu ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
 }
 
-.selection h1
-{
-  margin: 0;
-  color: #32cd32;
-}
 
-.selection p
-{
+.mo-menu ul li a{
   color: #fff;
+  text-decoration: none;
+  font-size: 9px;
 }
 
 
-</style>
-
-
-     </head>
-     <body>
-     
-     <div class="selection">
-        <div class="text">
-        <h1> Your TopUp Center </h1>
-        <p>&nbsp;</p>
-        <p style="font-size: 20px; color:#00bfff" > Your Best Game Patner </p>
-        <p>&nbsp;</p>
-        <p style="font-size: 15px; color: #00ff7f" class="center"> Trusted, Faster, Secure, Instant Delivery</p>
-        </div>
-      <img src="https://i.postimg.cc/HnJG10KY/PNG-FFDSBD.png" alt="" />
-      </div>
-        
-          <!-- CREATE THE WEB PAGE LAYOUT HERE! -->
-          
-          
-          
-          <div class="menu-bar">
-          <ul>
-          <li class="active"><i class="fa-solid fa-house-chimney-user"></i><a href="https://yourtopupcenter.github.io/home"> Home</a></li>
-          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Products</a></li>
-          <li><a href="#"><i class="fa-solid fa-percent"></i> Offer</a></li>
-          <li><a href="#"><i class="fa-solid fa-rss"></i> Blogs</a></li>
-          <li><a href="#"><i class="fa-solid fa-address-card"></i> About Us</a></li>
-          <li><a href="#"><i class="fa-duotone fa-address-book"></i> Contact Us</a></li>
-          <li><a href="#"><i class="fa-brands fa-teamspeak"></i> Terms</a></li>
-          </ul>
-          
-          </div>
-          
-        
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <style>
-<!-- Titel Name ! -->
-h1 {
-  text-shadow: 2px 2px #B2B2B2;
+.mo-menu ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
-</style>
+
+
+.mo-menu ul li:hover::after{
+  width: 100%;
+}
+
+
+
+@media(max-width: 700px){
+  	.text-box h1{
+  	  font-size: 20px;
+  }
+  
+  .nav-links ul li{
+    display: block;
+  }
+  
+  .nav-links{
+    display: none;
+  }
+  .mo-menu{
+   display: block;
+ }
+}
+
+
+
+
+
+.hotpro{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight : 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotpro-col{
+    flex-basis: 31%;
+    background: #57f13c6a;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 17px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+.hotpro-col a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #080078;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.hotpro-col:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.8);
+}
+
+@media(max-width: 700px){
+   .row{
+       flex-direction: column;
+   }
+}
+
+.trusted{
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.trusted h1{
+    font-size: 35px;
+    color: #045d5d;
+}
+.trusted p{
+    color: #008080;
+    font-size: 15px;
+}
+
+.tr{
+    padding-top: 20px;
+}
+.xxx{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tr h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.tr p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+.low{
+    padding-top: 15px;
+}
+
+.low h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.low p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+.delivery{
+    padding-top: 15px;
+}
+
+.delivery h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.delivery p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+.coustomer{
+    padding-top: 15px;
+}
+
+.coustomer h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.coustomer p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+.pay{
+    padding-top: 15px;
+}
+
+.pay h2{
+    text-align: center;
+    color: #2f539b;
+    font-size: 30px;
+}
+
+.pay p{
+    text-align: center;
+    color: #2b547e;
+    font-size: 17px;
+}
+
+
+
+.call{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://i.postimg.cc/NjpsznZm/jezael-melgoza-2-Fi-Xtdn-Vhj-Q-unsplash-1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.call h1{
+    color: #fff;
+    margin: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+   .call h1{
+       font-size: 24px;
+   }
+}
+
+
+.nagad{
+    padding-bottom: 100px;
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #00093c;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 30px;
+    color: #9bff6a;
+}
+
+.footer p{
+    font-size: 15px;
+    color: #51f390;
+}
+
+.icons i{
+    margin: 0 13px;
+    color: #00ff03;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 40px;
+}
+
+
+
+
+.usl{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.uslx a{
+    text-decoration: none;
+    color: #65c2f3;
+    font-size: 15px;
+}
+
+.uslx a:hover{
+    color: #e9a2f3;
+}
+
+.copyright p{
+    padding-top: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+@media(max-width: 700px){
+    .footer h4{
+        font-size: 20px;
+    }
+    
+    .footer p{
+        font-size: 13px;
+    }
+    .uslx a{
+        font-size: 14px;
+    }
+    
+    .icons i{
+        font-size: 25px;
+    }
+    
+    .copyright p{
+        font-size: 12px;
+    }
+    .usl{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+
+    </style>
+    
 </head>
+
+
 <body>
-<p>&nbsp;</p>
-<div align="center">
-<h1>Welcome To "Your TopUp Center" </h1>
+
+<section class="header">
+		<nav>
+			<a href="https://yourtopupcenter.github.io/home"><img src="https://i.postimg.cc/zX4xWrNt/IMG-1691231564314.png"></a>
+			  <div class="nav-links">
+			    <ul>
+			      <li><a href="https://yourtopupcenter.github.io/home">HOME</a></li>
+			      <li><a href="#">PRODUCTS</a></li>
+			      <li><a href="#">OFFER</a></li>
+			      <li><a href="#">BLOGS</a></li>
+			      <li><a href="#">ABOUT</a></li>
+			      <li><a href="#">CONTACT Us</a></li>
+			    </ul>
+			     
+			  </div>
+			  
+			 
+			 </div>
+			 
+
+<div class="mo-menu">
+
+<ul>
+			      <li><a href="https://yourtopupcenter.github.io/home">HOME</a></li>
+			      <li><a href="#">PRODUCTS</a></li>
+			      <li><a href="#">•••</a></li>
+</ul>
+</div>
+		</nav>
+
+<div class="text-box">
+	<h1>Your TopUp Center</h1>
+	<p>Your Best Game Patner <br>Trusted, Low Price, Secure, Instant Delivery</p>
+	<a href="#" class="hero-btn">See Our Products</a>
+	
+
 </div>
 
+</section>
 
-<!-- Subtitel : FF Diamond Store BD! -->
-<div align="center">
-<canvas id="C1" width="200" height="50" style="border:0px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+<!--Hot Products!-->
+
+<section class="hotpro">
+    <h1>Our Hot Products...! </h1>
+    <p>Our top selling products. Chek out now </p>
+    
+    <div class="row">
+        <div class="hotpro-col">
+            <h3>Free Fire (UID)</h3>
+            <img src="https://i.postimg.cc/XYc13VxL/Picsart-23-09-10-14-59-51-147.png" height="180px" width="150px;">
+            <p><a href="#">TopUp Now ! </a></p>
+        </div>
+        
+        <div class="hotpro-col">
+            <h3>PUBG Uc BD</h3>
+            <img src="https://i.postimg.cc/9QhBgdWN/Picsart-23-09-10-14-59-08-289.png" height="180px" width="150px;">
+            <p><a href="#">Buy Now ! </a></p>
+        </div>
+        
+        <div class="hotpro-col">
+            <h3>:)</h3>
+            <img src="https://i.postimg.cc/PqVL8w2q/Picsart-23-09-10-15-35-21-019.png" height="180px" width="150px">
+            <p>Stay With Us...</p>
+        </div>
+    </div>
+</section>
+
+<section class="trusted">
+  <h1>Why Buy From <b>" Your TopUp Center "</b> ? </h1>
+  <p><b>You can easily and quickly topup your favorite games from Your TopUp Center . 
+Moreover, we are constantly improving the purchase, delivery and payment system processes of our customers .  We keep trying to add more new products .  So why delay, order your desired product now. </b></p>
+  
+  <div class="tr">
+      <img src="https://i.postimg.cc/rFBjp9LW/Picsart-23-09-06-11-44-05-815.png" height="100px" weidth="100px" alt="No Image" class="xxx">
+      <h2>Trusted</h2>
+      <p><b>We sell products with complete Trusted</b></p>
+  </div>
+  
+  <div class="low">
+      <img src="https://i.postimg.cc/htstPcJd/Picsart-23-09-06-11-59-00-867.png" height="90px" width="120px" alt="No Image" class="xxx">
+      
+      <h2>Low Rate</h2>
+      <p><b>We try to keep prices as low as possible <3 </b></p>
+  <div>
+      
+   <div class="delivery">
+       <img src="https://i.postimg.cc/jdyP4brL/Picsart-23-09-06-12-32-38-077.png" alt="No image" width="100px" height="100px"class="xxx">
+       <h2>Instant Delivery</h2>
+       <p><b>We usually take 5-10 minutes. But if there is any technical problem it may take 30 minutes </b></p>
+   <div>
+   
+   <div class="coustomer">
+       <img src="https://i.postimg.cc/63B8JtBT/Picsart-23-09-06-13-46-20-905.png" alt="No image" width="105px" height="90px" class="xxx">
+       <h2>24/7 Coustomer Support</h2>
+       <p><b>We are on 24/7 Coustomer Support. If you are any problem Contact Us</b></p>
+   <div>
+   
+   <div class="pay">
+       <img src="https://i.postimg.cc/7LwZ6zLX/payment.png" alt="No image" width="100px" height="100px" class="xxx">
+       <h2>Easy Payments</h2>
+       <p><b>Pay us very easily. With 100% security.</b></p>
+   <div>
+</section>
+
+
+<section class="call">
+    <h1>For Any Support,  Help,  Problem,  Report,  Investment,  Partnership, or  Advisement </h1>
+    <a href="#" class="hero-btn">Contact Us</a>
+</section>
+
+
+
+
+<div class="nagad">
+  
+
+<img src="https://i.postimg.cc/yxk7V814/Picsart-23-09-08-21-30-44-449.png" alt="No image" height="150px" width="350px" class="xxx">
+
 </div>
-<script>
-var c = document.getElementById("C1")
-var ctx = c.getContext("2d")
+<section class="footer">
+    
+    <h4>About Us</h4>
+    <p>Top-up your favorite game credits at  " Your TopUp Center " ,  your trusted online digital game store. You get your game credits fast in just 5 - 10 minutes. You can order by following just a few steps. Buy safely online with Nagad, bKash, Rocket. Our  " Your TopUp Center "  platform is a safe and reliable platform.</p>
+    
+    
+        
+
+<h4>Important Links</h4>
+
+<div class="usl">
+            
+            
+            <div class="uslx">
+                
+            <a href="https://yourtopupcenter.github.io/home">Home</a>
+            <P></P>
+            <a href="#">Products</a>
+            <p></p>
+            <a href="#">Offer</a>
+            <p></p>
+            <a href="#">FAQ</a>
+            
+        </div>
+        
+         
+            <div class="uslx">
+                
+            <a href="#">Blogs</a>
+            <p></p>
+            <a href="#">Reseller Platform</a>
+            <p></p>
+            <a href="#">About Us</a>
+            <p></p>
+            <a href="#">Contact Us</a>
+        </div>
+        
+        
+        </div>
+    
+    
+    
+    
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100088285495507"><i class="fa-brands fa-facebook"></a></i>
+        <a href="https://youtube.com/@kingofthekilar-1414"><i class="fa-brands fa-youtube"></a></i>
+        <a href="https://t.me/yourtopupcenter"><i class="fa-brands fa-telegram"></a></i>
+        <a href="#"><i class="fa-solid fa-user-group"></i></a>
+        <a href="https://wa.me/message/KMQOSZQOY7BXB1"><i class="fa-brands fa-whatsapp"></a></i>
+    </div> 
+
+
+
+<div class="copyright">
+    
+    <p>All Rights Reserved by © FF Diamond Store BD 2022-2023 </p>
+    </div>
+</section>
+
+<!--main js-->
+<script src="js/main.js">
+
+   </script>
+</body>
 
-ctx.fillStyle = "blue"
-ctx.font = "20px comfortaa"
-ctx.fillText("FF Diamond Store BD", 10, 30)
 
-</script> 
-
-<!---cover--->
-<img src="https://i.postimg.cc/hvS77Fgy/31168142.jpg" alt="logo 1"class="center">
-
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-
-<!----main contents!---->
-<p style="font-size:25px" align="center"><strong><u>আসসালামু আলাইকুম</u></strong></p>
-<p>&nbsp;</p>
-<p style="font-size:20px" align="center">Hlw Friends. Welcome To Our Website .  আমাদোর এই ওয়েবসাইটটি শিগরিই ফুল আপডেট 
-করে পাবলিশ করা হবে ।  এই ওয়েবসাইটের ডেবলোপার শুধু আমি ।  তাছাড়া আমি খুব একটা ওয়েব ডেভলপমেন্ট করতে পারি না ।  অনেকদিনের ইচ্ছা ছিলো নিজের 
-ওয়েবসাইট থাকবে ।  <strong>আল্লাহ তায়ালার অশেষ রহমতে আজ এই ছোট্ট একটা ওয়েবসাইটটি তৈরি করতে পেরেছি</strong> ।  এই সাইটের অনেক ডেভলপমেন্ট দরকার ।  অনেক 
-নতুন নতুন ফিচার দরকার ।  এই সাইটটি মুলত আমার TopUp Center এর মেইন সাইট হবে ,  এক সময় তোমরা এই সাইট থেকে টপআপ করতে পারবে ।  
-তোমারা কী কী ফিচার চাও, আমার <a href=https://www.facebook.com/profile.php?id=100088285495507> ফেসবুক পেজে </a>মেসেজের মাধ্যমে জানাও ।  </p>
-
-<p style="font-size:20px" align="center">প্রত্যেক সপ্তাহে সাইটটি আপডেট করা হবে ।  তাছাড়া প্রত্যেকদিন ছোট্ট ছোট্ট আপডেট আসবে ।  আমাদের ওয়েবসাইটি Proper
- Update এর আগেই,  আমাদের TopUp Center টি চলার মতো Blog Post / Offer Post / Development Post এর মতো কিছু Article পাবলিশ করা হবে । আর,  
- আমাদের Facebook Page এ কোনো কিছু পোস্ট করার আগে ওয়েবসাইটে পোস্ট করা হবে ।  <strong>তাই সবার আগে আমাদের আপডেট পেতে এই সাইটটি নিয়মিত ভিজিট করো ।  </strong> অনেকেই এটা ভেবে অবাক হচ্ছো যে, আমাদের TopUp Center এর নাম <b>"FF Diamond Store BD"</b> । 
- তাহলে, আমাদোর ওয়েবসাইটের নাম <b>"Your TopUp Center" </b> কেনো হলো ? আসলে, ধীরে ধীরে আমি আরও Products যোগ করব ।  আমি আগে শুধু Garena Free Fire এর টপআপ সেল করতাম,  কিন্তু শিগরিই আমি আরও Products যোগ করব ।  তোমরা এখানে প্রায় সব গেমের TopUp, Voucher, Gift Card সহ অনেক
- কিছু পাবে ।  আমি শুধু আরেকটা Products যোগ করেই আমাদের পেজ সহো যাবতীয় সব জায়গায় <b>"FF Diamond Store BD"</b> এর পরিবর্তে <b style="color: #00008b"> Your TopUp Center </b></mark> নামে পরিবর্তন হয়ে যাবে ।  মূলত,  আমাদের Company এর নাম হবে <b>"Your TopUp Center" </b> । </p>
- <p style="font-size:20px" align="center">Thanks You Everyone ! </p>
-
-<p>&nbsp;</p>
-
-<!-----contact info!---->
-<p style="font-size:25px"><strong>Contact Us  </strong><i class="fa-regular fa-id-badge"></i></p>
-<p>&nbsp;</p>
-<p style="font-size:20px"><i class="fa-solid fa-phone-volume fa-xl"></i><strong>+8801781146747</strong>   <sub>   [ Call Me ]</sub></p>
-<p>&nbsp;</p>
-<p style="font-size:20px"><i class="fa-brands fa-facebook fa-xl" style="color: #0000ff;"></i> <strong><a href="https://www.facebook.com/profile.php?id=100088285495507">Facebook Page</a></strong>   <sub>  [ Follow Our Page ]</sub></p>
-<p>&nbsp;</p>
-<p style="font-size:20px"><i class="fa-brands fa-square-whatsapp fa-xl" style="color: #00ff00;"></i> <strong><a href="https://wa.me/message/KMQOSZQOY7BXB1">WhatsApp</a></strong>   <sub>   [ Send Me Massage ]</sub></p>
-<p>&nbsp;</p>
-<p style="font-size:20px"><i class="fa-solid fa-circle-user fa-xl" style="color: #1faef0;"></i> <strong>iMo : +8801781146747</strong>    <sub>    [ Contact Me On iMo ]</sub></p>
-<p>&nbsp;</p>
-<p style="font-size:20px"><i class="fa-solid fa-user-group fa-xl" style="color: #0000ff;"></i> <strong><a href="https://www.facebook.com/groups/1140022886654380/?ref=share_group_link">Facebook Group</a></strong>     <sub>   [ Join Our Group ]</sub></p>
-<p>&nbsp;</p>
-<p style="font-size:20px"><i class="fa-brands fa-youtube fa-xl" style="color: #ff0000;"></i> <strong><a href="https://youtube.com/@kingofthekilar-1414">YouTube Channel</a></strong>    <sub>    [ Suscribe Our Channel ]</sub> </p>
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-<!----web address!----->
-<h2 style="color:#1F6357"align="center"> Our Website : yourtopupcenter.github.io/home  </h2>
-
-
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-<!---Thanks!---->
-<h1 align="center"><sup>Hey Visitor,</sup>Thanks For Visiting this site. Please Come Back Soon...</h1>
-
-<!-- For Uses Box! -->
-<div align="center">
-<canvas id="C2" width="700" height="300" style="border:0px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-</div>
-
-
-<hr>
-
-
-<!-- DEVELOPMENT NOTICE! -->
-<div align="center">
-<canvas id="myCanvas" width="700" height="300" style="border:0px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-</div>
-<script>
-var c = document.getElementById("myCanvas")
-var ctx = c.getContext("2d")
-
-ctx.strokeStyle = "Red"
-ctx.font = "30px comfortaa"
-ctx.strokeText("Cautions", 100, 130)
-
-ctx.fillStyle = "green"
-ctx.font = "30px serif"
-ctx.fillText("This Website is now under Development", 100, 170)
-
-</script> 
-
-
-<!-- Next Update Info! -->
-<marquee behavior="scroll" direction="left">
-<h3>Full Update Are Coming Soon,,, Please Wait!</h3>
-</marquee>
-<p>&nbsp;</p>
-
-
-
-<!-- Developer Info! -->
-<p style="font-size:30px;" align="center"><strong>Devloper info  </strong><i class="fa-solid fa-id-card-clip"></i></p>
-<p>&nbsp;</p>
-<p style="font-size:25px;"><strong>MD Ali Hosen </strong><sub style="font-size:15px"> Owner Your TopUp Center, FF Diamond Store BD & #KOTK Inc</sub></p>
-
-<p style="font-size:25px;">Developer Contact_</p>
-<p>&nbsp;</p>
-<h3><i class="fa-brands fa-whatsapp fa-xl" style="color: #00ff00;"></i> <a href=https://wa.me/qr/27IJMDF3ER3AB1> WhatsApp</a></h3> 
-<p>&nbsp;</p>
-<h3><i class="fa-brands fa-square-facebook fa-xl" style="color: #0000ff;"></i> <a href=https://www.facebook.com/profile.php?id=100092483306371>Facebook ID</a></h3>
-<p>&nbsp;</p>
-
-<!-- Try1 : image! -->
-<img src="https://i.postimg.cc/zD7D5W97/49148604.jpg" alt="Prince AH" class="center">
-<p>&nbsp;</p>
-
-<hr>
-<p>&nbsp;</p>
-
-<!-----Web info!---->
-<p style="font-size:25px; color:#000080"><Strong>Web Info</strong></p2>
-<h4> Website Created Date : 18/07/2023 </h4>
-<h4> Last Update Date : 22/07/2023 </h4>
-<h4> Version : #p5_m1 </h4>
-<p>&nbsp;</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p align="center">All Copyright Revived are FF Diamond Store BD inc © 2023<p>
-
-
-
-     </body>
 </html>
