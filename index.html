@@ -1297,6 +1297,180 @@ nav img {
                 font-size: 1.2rem;
             }
         }
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cabin", sans-serif;
+        }
+        body{
+    margin: 0 auto;
+    
+    background-color: #141414;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.05) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: animateBackground 10s linear infinite;
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0 0, 0 0;
+    }
+    100% {
+        background-position: 50px 50px, 50px 50px;
+    }
+}
+        
+        
+       .rev {
+            font-family: 'Poppins', sans-serif;
+            
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+           
+        }
+
+        .review-section {
+            width: 90%;
+            max-width: 1000px;
+            
+            border-radius: 15px;
+            box-shadow: 0 0 30px #50ff00;
+            padding: 30px;
+            transition: all 0.3s ease;
+            border: 4px solid #50ff00;
+        }
+
+     .rev  h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #50ff00;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .review {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            background: #3a3a3a;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .review:hover {
+            transform: translateY(-10px);
+            background-color: #444;
+        }
+
+        .review img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .review-content {
+            flex: 1;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .review-date {
+            font-size: 0.9em;
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #ffca28;
+            margin-bottom: 10px;
+        }
+
+        .review-stars i {
+            margin-right: 2px;
+        }
+
+        .review-text {
+            font-size: 1em;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .user-products {
+            font-size: 0.9em;
+            color: #aaa;
+        }
+
+        .facebook-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .facebook-link a {
+            text-decoration: none;
+            color: #fff;
+            background: #4267B2;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .facebook-link a:hover {
+            background: #365899;
+        }
+
+        @media (max-width: 600px) {
+            .review {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .review img {
+                margin-bottom: 15px;
+            }
+
+            .review-content {
+                text-align: center;
+            }
+
+            .reviewer-name, .review-date, .review-stars, .review-text, .user-products {
+                text-align: center;
+            }
+        }
+    
+    
 </style>
 </head>
 
@@ -1733,6 +1907,69 @@ nav img {
 
 
 
+        <section class="rev">
+    <div class="review-section">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <img src="https://i.postimg.cc/bYVhC8J8/IMG-20240809-114522-01.jpg" alt="Reviewer Image">
+            <div class="review-content">
+                <div class="reviewer-name">Jhb Jahid Hasan Bakir</div>
+                <div class="review-date">July 20, 2024</div>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="review-text">
+                   Exceptional service! The Monthly Membership for Garena Free Fire was delivered instantly, with no issues. Great value for money, and the support team was very responsive. Highly recommended for anyone looking to top up their Free Fire account in Bangladesh.
+                </div>
+                <div class="user-products">Purchased : Garena Free Fire Bangladesh</div>
+            </div>
+        </div>
+        <div class="review">
+            <img src="https://i.postimg.cc/Fz725dRv/1724334014093-01.jpg" alt="Reviewer Image">
+            <div class="review-content">
+                <div class="reviewer-name">MD Saroyar Khan</div>
+                <div class="review-date">August 5, 2024</div>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="review-text">
+                    I recently purchased 1260 Diamonds for Free Fire from Your TopUp Center. The process was quick, and the diamonds were delivered instantly to my account. The pricing was competitive, and the customer service was excellent. Highly recommend for anyone looking for a reliable top-up service!
+                </div>
+                <div class="user-products">Purchased : Garena Free Fire Bangladesh</div>
+            </div>
+        </div>
+        <div class="review">
+            <img src="https://i.postimg.cc/RFCkdbxN/ab17d59d-0722-4aba-9088-056811987a03-1-01.jpg" alt="Reviewer Image">
+            <div class="review-content">
+                <div class="reviewer-name">Fatema Jannat</div>
+                <div class="review-date">September 1, 2024</div>
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="review-text">
+                    I recently purchased the 100lv Royal Pass for PUBG Mobile from Your TopUp Center, and the experience was flawless. The transaction was quick, and I received the pass instantly. Excellent customer service and highly reliable. Will definitely use their services again for future purchases!
+                </div>
+                <div class="user-products">Purchased : PUBG Mobile</div>
+            </div>
+        </div>
+        <div class="facebook-link">
+            <a href="https://www.facebook.com/yourtopupcenterofficial" target="_blank">See More Reviews on Facebook</a>
+        </div>
+    </div>
+    </section>
+    
 
 
 
