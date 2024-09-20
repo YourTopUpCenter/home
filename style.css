@@ -1005,26 +1005,9 @@ nav img {
         }
         
         
+       
         
-        #m_button{
-            color: black;
-            background: #50ff00;
-            padding: 15px;
-            border-radius: 30px;
-            font-size: 30px;
-            margin-left: 40%;
-            margin-top: 35px;
-            border-none;
-            box-shadow: 0 0 10px #50ff00;
-            border: none;
-            margin-bottom: 35px;
-        }
-        
-        #m_button:hover{
-            box-shadow: 0 0 30px #50ff00;
-            transition: 0.5s;
-        }
-        
+       
         @media (max-width: 400px) {
             #m_button{
                 font-size: 15px;
@@ -1305,41 +1288,7 @@ nav img {
 
 
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Section</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Cabin", sans-serif;
-        }
-        body{
-    margin: 0 auto;
-    
-    background-color: #141414;
-    background-image: linear-gradient(180deg, rgba(255,255,255,0.05) 1px, transparent 1px), 
-                      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-    background-size: 50px 50px;
-    animation: animateBackground 10s linear infinite;
-}
-
-@keyframes animateBackground {
-    0% {
-        background-position: 0 0, 0 0;
-    }
-    100% {
-        background-position: 50px 50px, 50px 50px;
-    }
-}
         
         
        .rev {
@@ -1474,3 +1423,50 @@ nav img {
             }
         }
     
+
+
+.mr_b{
+    justify-content: center;
+    align-item: center;
+    display: flex;
+    margin-top: 40px;
+}
+
+.mr_b button{
+    color: black;
+            background: #50ff00;
+            padding: 15px 25px 15px 25px;
+            border-radius: 30px;
+            font-size: 30px;
+           color: #000;
+            
+            box-shadow: 0 0 10px #50ff00;
+            border: none;
+            margin-bottom: 35px;
+}
+
+
+.mr_b button:hover{
+      box-shadow: 0 0 30px #50ff00;
+      transition: 0.5s;
+}
+
+
+@media(max-width: 400px){
+   .mr_b{
+       margin-top: 20px;
+   }
+   
+  .mr_b button{
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding: 10px 15px 10px 15px;
+      border-radius: 20px;
+  }
+  
+.sm_ab h1{
+     margin-left: 5%;
+     margin-right: 5%;
+     font-size: 1.8rem;
+ }
+    }
