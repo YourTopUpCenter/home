@@ -8,11 +8,11 @@ function toggleMenu() {
     if(menuIcon.classList.contains("fa-bars")) {
         menuIcon.classList.remove("fa-bars");
         menuIcon.classList.add("fa-times");
-        navbar.style.background = "rgba(0, 0, 0, 0.8)"; // Background appears when toggled
+        navbar.style.background = "rgba(0, 0, 0, 0.8)";
     } else {
         menuIcon.classList.remove("fa-times");
         menuIcon.classList.add("fa-bars");
-        navbar.style.background = "transparent"; // Background becomes transparent again
+        navbar.style.background = "transparent";
     }
 }
 
@@ -25,20 +25,14 @@ window.addEventListener("scroll", function () {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     
     if (currentScroll > lastScrollTop) {
-        // নিচের দিকে স্ক্রল করলে navbar হাইড হবে
+        
         navbar.style.top = "-80px"; 
     } else {
-        // উপরের দিকে স্ক্রল করলে navbar শো হবে
+        
         navbar.style.top = "0"; 
     }
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
 });
-
-
-
-
-
-// Add 3D floating effect to footer items
         const footerSections = document.querySelectorAll('.footer-section h2');
 
         footerSections.forEach(section => {
@@ -79,9 +73,7 @@ window.addEventListener("scroll", function () {
             updateDots(currentIndex);
         }
 
-        setInterval(showNextSlide, 3000);  // Change slide every 3 seconds
-
-        // Touch/Drag event listeners for slide control
+        setInterval(showNextSlide, 3000);  
         slides.addEventListener('mousedown', (e) => {
             startX = e.clientX;
             isDragging = true;
@@ -119,20 +111,13 @@ window.addEventListener("scroll", function () {
         slides.addEventListener('touchend', () => {
             isDragging = false;
         });
-
-        // Close notice function
         function closeNotice(id) {
             const notice = document.getElementById(id);
             notice.style.opacity = '0';
             notice.style.transform = 'translateY(-20px)';
             setTimeout(() => notice.style.display = 'none', 500);
         }
-        
-        
-        
-        
-        
-        let slideIndexA = 0;
+let slideIndexA = 0;
         const slidesA = document.querySelector('.slidesa');
         const totalSlidesA = document.querySelectorAll('.slidea').length;
 
@@ -150,16 +135,8 @@ window.addEventListener("scroll", function () {
             const offsetA = -slideIndexA * 100;
             slidesA.style.transform = `translateX(${offsetA}%)`;
         }
-
+        
         setInterval(showNextSlideA, 3000);
-        
-        
-        
-        
-        
-        
-        
-        
         const supportIcon = document.getElementById('supportIcon');
     const callIcon = document.getElementById('callIcon');
     const whatsappIcon = document.getElementById('whatsappIcon');
@@ -185,24 +162,17 @@ window.addEventListener("scroll", function () {
             messengerIcon.classList.remove('show');
         }
     });
-
-    // Show the Up Button when scrolling down 100px
-    window.onscroll = function() {
+window.onscroll = function() {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             upButton.style.display = "flex";
         } else {
             upButton.style.display = "none";
         }
     };
-
-    // Scroll to top when Up Button is clicked
     upButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-    
-    
-    
-    window.onload = function() {
+window.onload = function() {
         const popup = document.getElementById('popup');
         const closePopup = document.getElementById('closePopup');
 
@@ -216,4 +186,7 @@ window.addEventListener("scroll", function () {
             popup.classList.remove('show');
         });
     }
-    
+var link = document.createElement("link");
+link.href = "style.css";
+link.rel = "stylesheet";
+document.head.appendChild(link);
