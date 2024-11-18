@@ -190,3 +190,21 @@ var link = document.createElement("link");
 link.href = "style.css";
 link.rel = "stylesheet";
 document.head.appendChild(link);
+
+    const popupModal = document.getElementById('id-1');
+    const popupCloseBtn = document.getElementById('id-2');
+
+    // Show popup after 1 second
+    setTimeout(() => {
+      popupModal.classList.remove('cls-hidden');
+    }, 1000);
+
+    // Close popup on button click
+    popupCloseBtn.addEventListener('click', () => {
+      popupModal.classList.add('cls-hidden');
+    });
+
+    // Auto-close popup after 30 seconds
+    setTimeout(() => {
+      popupModal.classList.add('cls-hidden');
+    }, 30000);
