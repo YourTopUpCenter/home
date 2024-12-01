@@ -186,10 +186,7 @@ window.onload = function() {
             popup.classList.remove('show');
         });
     }
-var link = document.createElement("link");
-link.href = "style.css";
-link.rel = "stylesheet";
-document.head.appendChild(link);
+    
 
     const popupModal = document.getElementById('id-1');
     const popupCloseBtn = document.getElementById('id-2');
