@@ -297,3 +297,16 @@ function sendToTelegramBot() {
             });
     });
 }
+
+
+ function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+      const themeToggle = document.querySelector('.theme-toggle i');
+      if (document.body.classList.contains('light-mode')) {
+        themeToggle.classList.remove('fa-moon');
+        themeToggle.classList.add('fa-sun');
+      } else {
+        themeToggle.classList.remove('fa-sun');
+        themeToggle.classList.add('fa-moon');
+      }
+    }
